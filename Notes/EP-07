@@ -1,0 +1,71 @@
+**UseEffect**
+
+1. If no dependency array => useEffect is called every componenet re-render
+ex:
+useEffect(()=>{
+    console.log("Dhinesh")
+    
+});
+
+2. if dependency array is empty => [] => useEffect is called on intial render (just once).  
+ex:
+useEffect(()=>{
+    console.log("Dhinesh")
+    
+}, []);
+
+3. if dependency array contains some variable, the useeffect is re render once variable is updated.
+
+ex:
+useEffect(()=>{
+    console.log("Dhinesh")
+    
+}, [searchText]);
+
+
+**Use State:**
+
+1. It use to local state variables inside a functional component
+
+
+**Routing**
+
+1. import createBrowserRouter and RouterProvider component.
+
+const vaariable name = createBrowserRouter([
+    {},
+    {},
+    {}
+])
+
+root.render(<RouterProvider router={variable name}/>);
+
+2. **UseRouteError** - is this used to get more information about Error.
+Eg:
+import {UseRouteError, useParams} from "react-router-dom";
+
+const err = UseRouteError();
+<h1>{err.data}</h1>
+
+3. **Outlet** - Its used to fill place according to path
+
+4. **Link**:
+
+
+Types of Routing:
+
+1. Client side routing
+2. Server side routing
+
+
+
+Hook - useParams():
+1. its used to get id from URL.
+
+// Ex:
+// URL: tastytoast.com/restaurent/1234
+
+// const [resId] = useParams();
+// console.log(resId);
+// o/p: 1234
+// .data?.cards[4]?.groupCard?.cardGroupMap?.REGULAR?.cards[2]?.card?.card?.itemCards

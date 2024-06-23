@@ -1,0 +1,33 @@
+To install parcel use below command.
+
+**npm install -D parcel**
+
+create app using below command:
+
+**Npx parcel index.html**
+
+npx - excuting package use this command
+
+CDN is a not proper way to bring react and react dom into our project.
+
+Expected conrtent key doesnot exis issue - **Remove-Item -Recurse -Force .parcel-cache** use this command
+rerun the project.
+
+
+# Parcel
+1. Dev Build
+2. Local Server
+3. HMR = Hot Module Replacement
+4. File watching Algorithm
+5. Caching - Faster Builds
+6. Image Optimization
+7. Minification
+8. Bundling
+9. Compressing
+10. Consistent Hashing
+11. Code Splitting
+12. Diifernetial Bundling - Support Old Browsers
+13. Diagonostics
+14. Error Handling
+15. HTTPs
+16. Tree Shaking  - Remove Unused Codes

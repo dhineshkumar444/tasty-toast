@@ -1,0 +1,50 @@
+Optimizing App :
+
+Single Responsibilty Principle:
+
+ 
+ If we follow Single Responsibility Priciple,
+
+ 1. The code is reusable,
+ 2. The code is easily maintainable and
+ 3. Testable
+
+ Custom Hooks:
+
+ 1. Why Custom Hooks:
+
+ -  it will make code readble, modular and reusable
+
+ 2. Naming file for Custom Hooks:
+
+ - in file name "use" before teh function name.
+ eg:
+ useResturentInfo.js;
+
+ # Lazy Loading or Ondemand Loading:
+
+ * it will use to  load the js, when user click portion:
+
+**Syntax:**
+
+ const Variable = lazy(()=> import("Component path"))
+
+ no need import the component in top of the page
+
+ Eg:
+
+ - without lazy loading when first time render the project load all the javascript file. 
+ - if project have more components it will take lot of time load project in web browser.
+ - If we use lazy loading, it will not load all js file at the time first project render.
+ - If user click the contact us means at the time only load the required JS files. So, it will increase the  page performance speed and use to split tha js files into smaller bundelrs
+
+
+ Types of name:
+ 1. Chuncking
+ 2. Code Spliting
+ 3. Dynamic Bundeling
+ 4. Dynamic Import
+ 5. Lazy loading
+
+
+

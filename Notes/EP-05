@@ -1,0 +1,46 @@
+React Hooks
+
+Two types of export:
+1. Default export
+2. Named Export - its used to export multpile items in single file.
+
+1. Default Export/Import:
+Syntax:
+    - export default Component
+    - import Component from "path"
+
+2. Named Export and Import:
+Syntax:
+
+    - export const Component or variabel name = () => {
+        retunn (code)
+    }
+
+    - import {Component Or Variable name} from "Path"
+
+
+React Hooks:
+1. UseState:
+
+Syntax: 
+const [var, setVar] = useState();
+
+
+Performance Optimaixation:
+1. React perfectly done the dom manipulation.
+2. React use Virtual dom
+
+
+**Reconciliation (React Fiber) R6**
+
+**Create Virtual DOM**- it is  representaion of actual dom
+
+The virtual dom is a normal javascript object.
+
+
+**Diff Algorithm:**
+
+ find the difference between two virtual doms.
+ one is pervious virtual dom and another one is updated virtual dom.
+
+ After find the differnce in virtual doms, it will updated the only difference in actual dom in every render cycle

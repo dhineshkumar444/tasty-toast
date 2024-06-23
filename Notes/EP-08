@@ -1,0 +1,62 @@
+Class Based Componenets - Older way to building Componenets
+Function Componenets - New way to building Componenets.
+
+**Function COmponenets**:
+1. Its a normal javascript function and it returns a some piece of JSX code.
+
+**Class Based Component**:
+1. Its a javascript class and its have a render method (render()) which returns some piece of JSX code
+
+
+Life cycle methods:
+
+1. First excute parent component line by line.
+2. if see class based component immedietly load the class based component.
+3. If class based component is a instance of the class.
+4. if classed based component is excute the constructor is called.
+5. If constructor is caled then render method is called.
+6. If everything excuted finally component did mount method is called.
+
+
+**Component Did Mount**:
+1. Its used to make a api call.
+
+* It is like a **use Effect** in a functional component(it is called after component render completely)
+
+* Loads => render => make API call => render the data
+
+* Component Did Mount also do same thing. It will excute after component completely render.
+
+To study react lifecycle method use below website:
+
+[text](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
+
+ Componennt mounting has 2 phases:
+
+ 1. Render Phase
+    - constructor 
+    - render
+ 2. Commit Phase
+
+    - update DOM and refs
+    - ComponentDidMount
+
+React is first doing render phase for parent and all the children once complete excute the commit phase for parent and all the children
+
+
+-----MOUNTING ----
+- Constructor (dummy)
+- Render (dummy)
+- <HTML Dummy >
+Component Did Mount
+- <API Call>
+- <this.setState> State variable is updated
+
+-------- UPDATE -------
+ - render (APi data)
+ - <HTML (new API data)
+ Component Did Update 
+
+ https://www.swiggy.com/dapi/restaurants/list/v5?lat=13.0765077&lng=80.2389733&collection=80397&tags=layout_BAU_Contextual%2Csamosa&sortBy=&filters=&type=rcv2&offset=0&page_type=null
+
+ https://www.swiggy.com/dapi/restaurants/list/v5?lat=13.0765077&lng=80.2389733&collection=83649&tags=layout_CCS_Biryani&sortBy=&filters=&type=rcv2&offset=0&page_type=null

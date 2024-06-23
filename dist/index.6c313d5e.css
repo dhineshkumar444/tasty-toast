@@ -1,0 +1,534 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.header {
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+  background-color: #1d232a;
+  border: 1px solid #000;
+  padding: 5px;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  position: sticky;
+  top: 0;
+}
+
+.header-container {
+  justify-content: space-between;
+  margin: auto;
+  padding: 10px 20px;
+  display: flex;
+}
+
+.authentication {
+  flex-grow: 1;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10%;
+  display: flex;
+}
+
+.authentication button {
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.cart {
+  position: relative;
+}
+
+.cart > span {
+  color: #000;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 3px 7px;
+  position: absolute;
+  top: -15px;
+}
+
+.card-container {
+  flex-wrap: wrap;
+  gap: 1%;
+  display: flex;
+}
+
+.card {
+  text-align: center;
+  border: 1px solid gray;
+  width: 24%;
+  position: relative;
+}
+
+.app-logo {
+  flex-grow: 1;
+  display: flex;
+}
+
+.varaities {
+  border-bottom: 1px solid #789;
+  display: flex;
+  overflow-x: scroll;
+}
+
+.banner {
+  width: 144px;
+  height: 180px;
+  display: block;
+}
+
+.banner img {
+  width: 144px;
+  height: 180px;
+}
+
+.varaities::-webkit-scrollbar {
+  display: none;
+}
+
+.rest-container, .shimmer-container {
+  flex-wrap: wrap;
+  gap: 3%;
+  display: flex;
+}
+
+.rest-container .resto {
+  border-radius: 5px;
+  width: 22.75%;
+  height: auto;
+  transition: linear .2s;
+  position: relative;
+}
+
+.rest-container .resto:hover {
+  border: 1px solid #789;
+  transform: scale(.95);
+}
+
+.rest-container .resto .image-restro {
+  object-fit: cover;
+  border-radius: 5px;
+  width: 100%;
+  height: 150px;
+}
+
+.top-resto {
+  padding: 20px;
+}
+
+.top-resto h2 {
+  text-align: center;
+  padding: 10px 0 30px;
+}
+
+.rest-container .resto {
+  background-color: #d3d3d3;
+  border: 1px solid #000;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.resto a {
+  color: #000;
+}
+
+.card-details {
+  padding: 5px;
+}
+
+.add, .top-res {
+  color: #fff;
+  cursor: pointer;
+  background: linear-gradient(90deg, #1155cb 0%, #538cee 25%, #1155cb 50%, #1155cbcc 80%, #1155cb00 100%);
+  border: 1px solid #fff;
+  border-radius: 5px;
+  margin: 10px 0;
+  padding: 5px 20px;
+}
+
+.veg-res {
+  color: #fff;
+  cursor: pointer;
+  background-color: #267e3e;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  margin: 10px 0;
+  padding: 5px 20px;
+}
+
+.cost {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.cost-rating {
+  background-color: #267e3e;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+  font-size: .8rem;
+  display: flex;
+}
+
+.cost-rating span {
+  color: #fff;
+  font-weight: 600;
+}
+
+.rating-logo {
+  margin-top: -5px;
+  margin-left: 5px;
+}
+
+.card-details h4 {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.cuisines {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #696969;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 24px;
+  overflow: hidden;
+}
+
+.cost-price, .locality {
+  color: #696969;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.nav-links ul {
+  flex-grow: 1;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5%;
+  display: flex;
+}
+
+.nav-links ul li {
+  flex-grow: 1;
+  padding: 10px;
+  list-style-type: none;
+}
+
+.nav-links ul li a {
+  color: #fff;
+}
+
+a {
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.nav-links {
+  flex-grow: 1;
+  display: flex;
+}
+
+.main-heading {
+  text-align: left;
+  flex-grow: 1;
+  margin-left: 10px;
+}
+
+.user {
+  padding: 20px 10px 0;
+}
+
+.top-resto {
+  border-bottom: 1px solid #000;
+}
+
+.restaurent {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.restaurent button {
+  justify-content: center;
+  align-self: self-start;
+  padding: 10px 15px;
+  font-size: 18px;
+}
+
+.receipe-content {
+  width: 60%;
+}
+
+.restaurent h2 {
+  flex-grow: 1;
+}
+
+.head-sub-heading {
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.shimmer-item {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  width: 22.75%;
+  height: 200px;
+  margin: 10px 0;
+  transition: linear .2s;
+}
+
+.shimmer-container {
+  padding: 30px 20px;
+}
+
+.search, input {
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  padding: 10px;
+}
+
+.search-container {
+  border: 1px solid #c6c5c5;
+  border-radius: 5px;
+  margin: 0 10px 40px 0;
+  display: inline-block;
+}
+
+.receipe-heading {
+  text-align: center;
+  color: #edae2f;
+  padding: 20px;
+}
+
+.res-name {
+  border-bottom: 5px double #28a745;
+  margin: auto;
+  padding-bottom: 5px;
+  font-size: 25px;
+  display: inline-block;
+}
+
+.receipe-details {
+  border-bottom: 1px solid #000;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+  padding: 10px 30px;
+  display: flex;
+}
+
+.receipe-add {
+  color: #28a745;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  border: 1px solid #9a9a9a;
+  border-radius: 5px;
+  outline: none;
+  padding: 5px 20px;
+}
+
+.receipe {
+  color: #02060c99;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.res-receipe-name {
+  color: #02060cbf;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.receipe-img {
+  object-fit: cover;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  width: 100px;
+  height: auto;
+}
+
+.receipe-count {
+  padding: 10px;
+  transition: linear .2s;
+  position: relative;
+}
+
+.receipe-add {
+  border: 1px solid #bbb;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.receipe-count:hover {
+  transform: scale(1.2);
+}
+
+.receipe-details:hover {
+  color: #4f4f4f;
+}
+
+.receipe-desc {
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  max-height: 3em;
+  font-size: 14px;
+  line-height: 1.5em;
+  display: -webkit-box;
+  overflow: hidden;
+}
+
+.footer-container, .privacy ul, .company {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.company .logo {
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  width: 50px;
+  height: auto;
+}
+
+.privacy ul li {
+  list-style-type: none;
+}
+
+.privacy ul {
+  flex-grow: 1;
+  gap: 40px;
+  padding: 20px 0;
+  font-size: 17px;
+}
+
+.social-icons {
+  gap: 50px;
+  display: flex;
+}
+
+.footer-main {
+  color: #fff;
+  text-align: center;
+  background-color: #1d232a;
+  padding: 20px 20px 10px;
+}
+
+.love {
+  font-size: 13px;
+}
+
+.text-red-500 {
+  fill: red;
+}
+
+.no-results {
+  min-height: 69vh;
+}
+
+.varaity-container {
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 50px 20px;
+  display: flex;
+}
+
+.varaity-item {
+  border: 1px solid #000;
+  border-radius: 10px;
+  width: 22.75%;
+}
+
+.varaity-item img {
+  object-fit: cover;
+  border-radius: 10px;
+  width: 100%;
+  height: 250px;
+}
+
+.varaity-image-container {
+  position: relative;
+}
+
+.varaity-image-container p {
+  color: #fff;
+  text-align: center;
+  background: linear-gradient(#1b1e2400 0%, #1b1e24 84.21%);
+  width: 100%;
+  padding: 5px;
+  font-size: 18px;
+  font-weight: 800;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.varaity-details {
+  padding: 15px 5px;
+}
+
+@media only screen and (width <= 1025px) {
+  .rest-container .resto, .shimmer-item {
+    width: 30.3333%;
+  }
+
+  .varaity-item {
+    border: 1px solid #000;
+    width: 30.3333%;
+    position: relative;
+  }
+}
+
+@media only screen and (width <= 600px) {
+  .rest-container .resto, .shimmer-item {
+    width: 100%;
+  }
+
+  .header {
+    flex-direction: column;
+    padding: 5px;
+    display: flex;
+  }
+
+  .nav-links ul, .nav-links {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+  }
+
+  .varaity-item img {
+    max-width: 50%;
+  }
+
+  .varaity-item {
+    border: 1px solid #000;
+    width: 45.5%;
+    position: relative;
+  }
+}
+/*# sourceMappingURL=index.6c313d5e.css.map */

@@ -1,0 +1,35 @@
+**Types of architecture**
+
+1. Monolith architecture - if made changess in source need deploy in whole project.
+2. MiroService Architecture - If once project have multiple microservices for different operations. is known as **separation of concerns**
+
+Two Approaches to fectch thhe data from backend:
+
+1. Page Loads => Make API call => get data from API => reder the data in UI.
+2. Page Loads => Reder UI what data we have => Make API call => Get required Data => Rerender the UI
+
+The React follows the second approach.
+
+
+UseEffect:
+
+*Its is a normal javascript function. This function has two arguments. One is callback function and another one is dependency array.
+
+1. Syntax:
+
+UseEffect(() => {
+
+}, [])
+
+2. How It will work.
+
+First redner the component and once the render cycle is completed it will excute the call back function.
+
+
+data => cards[1] => card => card => gridElements => infoWithStyle => 
+restaurants[0]
+
+
+Shimmer UI:
+
+its is used to show the fake cards or skeleton of the page show until data come

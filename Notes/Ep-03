@@ -1,0 +1,28 @@
+ To run project create npm script instad of npm command
+How to create script:
+    In package.json file under script section add name: function of script:
+# Example Script:
+ "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+
+# To run script use below command:
+npx parcel index.html => npm run start
+npx parcel build index.html => npm run build
+
+
+JSX:
+# Javascript xml = JSX
+# The syntax like HTML but not HTML
+# eg: const jsxheading = <h1>Dhinesh</h1>
+# The above code can't understand the js engine and browser.
+# jsxheading = object
+# JSX (Transpiled the code before reaches the js engine)
+# Transpiled = the JSX code converted to browser understandable code. Its is done by using PARCEL=> Babel
+
+Differ btw react create element and JSX:
+
+# React.createElemnt => react element => js Object => Html Element (render)
+# JSX => Bebel convert => React.createElemnt => react element => js Object => Html Element (render)

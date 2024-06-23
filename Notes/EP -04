@@ -1,0 +1,23 @@
+Is creating website follow below steps,
+
+1. Create wireframes - model of the webpage.
+2. Count how many components required or need to create
+
+
+Provide props to a component = provide a argument to a function
+
+Swiggy:
+
+Get Swiggy api and see data follow below steps:
+inspect> newtwork tab> refresh page > see datas are loading > right click and see datas
+
+**Config Driven UI**
+
+Ui is driven by config
+
+**Unique ID**
+
+1. If unique id not provide throw warning. It unique key not provided, we need to add new card in the card container they rerender all the cards in the card container. React dont know where to add that new card. So, It will add the all the cards.
+
+2. If we provided the unique key it will render new card , dont refresh all the cards. So, it will increase the performance optimization
+

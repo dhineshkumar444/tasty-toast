@@ -1,0 +1,56 @@
+ To run project create npm script instad of npm command
+How to create script:
+    In package.json file under script section add name: function of script:
+# Example Script:
+ "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+
+# To run script use below command:
+npx parcel index.html => npm run start
+npx parcel build index.html => npm run build
+
+
+JSX:
+# Javascript xml = JSX
+# The syntax like HTML but not HTML
+# eg: const jsxheading = <h1>Dhinesh</h1>
+# The above code can't understand the js engine and browser.
+# jsxheading = object
+# JSX (Transpiled the code before reaches the js engine)
+# Transpiled = the JSX code converted to browser understandable code. Its is done by using PARCEL=> Babel
+
+Differ btw react create element and JSX:
+
+# React.createElemnt => react element => js Object => Html Element (render)
+# JSX => Bebel convert => React.createElemnt => react element => js Object => Html Element (render)
+
+**Componenent**
+
+1. Functional Component
+2. Class Based Component
+
+**Functional component**:
+
+1. it just like a normal javascript function, which returns a piece of JSX.
+2. Name function always use capital letter.
+3. Function, its returing a react element.its calld function component.
+
+EX:
+const ExampleCode = () => {
+  return <h1>dhinesh </h1>
+}
+
+**Component Composition:**
+
+1. It means one component nested another component its called component composition.
+
+**Mallicious Attack:**
+
+If we use api to get data the attcker can send mallicious data, jsx can sanitze all the data to prevent mallicious attack.
+
+
+
+

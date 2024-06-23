@@ -1,0 +1,37 @@
+Github Configuration:
+1. git init - intialize the git repository in local
+2. Git add . - to add all the changes into staging;
+3. git commit -m "enter a commit message" - commit the changes
+4. git branch -M main - to create branch in repository named as main instead defalut brach name as a master
+5. git remote add orgin https://github.com/dhineshkumar444/namaste-react-learning.git - configure remote git repo
+6. git push origin main - to push the chnages in repo
+
+NPM:
+NPM - its package mamnagers. there no abbrevation for that. 
+
+package.json - its configuration of npm
+what is the most important package in our project?
+its is a bundeler. use to bundle the project properly and move to productioon
+names:
+1. Webpack
+2. vite
+3. Parcel
+
+Dependencies are two types:
+1. Dev dependencies (npm install -D parcel)
+2. Production dependencies (default dependencies  npm install parcel)
+
+Differ btw carot(^) and tilde (~) symbol in dependencies
+
+^ - this means minor version release means its automattically upgrade. but major version release means it will not upgrade automatically.
+~ - this means updagrade only the major version relase.
+
+
+Diff between package.json and package.lock.json file?
+
+Package.json - it will updgrade if new version is released. 
+Package.lock.json - it will not upgrade. when creating this file which version is available in machine consider that version only.
+
+Node modules:
+
+* If dependencies have own dependencies it is called **transitive dependencies**
